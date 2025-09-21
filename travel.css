@@ -1,0 +1,178 @@
+/* Basic CSS for the navigation bar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  /* padding: 0; */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Basic CSS for the form elements */
+body {
+  font-family: Arial, sans-serif;
+  /* margin: 20px; */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.hero,
+.about {
+  position: absolute;
+  top: 50%;
+  right: 0.5%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* padding: 20px; */
+  border-radius: 8px;
+  text-align: right;
+  max-width: 40%;
+}
+
+.contact {
+  position: absolute;
+  top: 50%;
+  right: 17%; /* Instead of right: 0.5% */
+  transform: translate(-50%, -50%);
+  color: white;
+  border-radius: 8px;
+  text-align: right; /* Maybe switch to left for better alignment */
+  max-width: 40%;
+}
+
+.bookButton {
+  margin-top: 8%;
+  padding: 1.6% 3.5% 1.6% 3.5%;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 2%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding: 2% 5% 5% 5%;
+  flex-wrap: nowrap;
+}
+
+.card {
+  flex: 1 1 23%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 2%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 35px;
+  padding: 5% 0% 5% 0%;
+}
+
+.formButton {
+  margin-top: 8%;
+  padding: 2% 3.5% 2% 3.5%;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  padding: 7px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Basic CSS for the report section */
+h2 {
+  margin-top: 30px;
+}
+
+.teamButton,
+.destButton {
+  margin-top: 8%;
+  padding: 2% 3.5% 2% 3.5%;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+#report,
+/* #result {
+  padding: 2%;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+#result {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-direction: column; */
+
+/*
+#result img {
+  width: 200px;
+  height: 100px;
+} */
+
+/* Some basic styling for demonstration purposes */
+#contactForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px;
+}

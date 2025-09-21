@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel recommendations</title>
+    <link rel="stylesheet" href="./travel.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://i.ibb.co/VRTS6Q3/placemark-logo.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <img
+        src="https://i.ibb.co/VRTS6Q3/placemark-logo.png"
+        alt="Logo"
+        style="height: 40px; vertical-align: middle; margin-right: 1px"
+      />
+      <h1 style="display: inline-block; vertical-align: middle">
+        Travel recommendations
+      </h1>
+      <ul>
+        <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+        <li><a href="./about.html" id="about">About Us </a></li>
+        <li><a href="./contact.html" id="about">Contact Us </a></li>
+        <li>
+          <input
+            type="text"
+            id="travelDestInput"
+            placeholder="Enter a destination or keyword"
+          />
+        </li>
+        <li><button id="btnSearch">Search</button></li>
+        <li><button id="btnReset">Reset</button></li>
+      </ul>
+    </nav>
+    <div style="position: relative; width: 100%; max-width: 100%">
+      <img
+        src="top-view-world-tourism-day-concept-with-copy-space.jpg"
+        alt=""
+        style="width: 100%; display: block"
+      />
+      <div class="hero">
+        <h1>Explore the World with Our Travel Recommendations</h1>
+        <p>
+          Your adventure starts here — find the best places, tips, and guides.
+        </p>
+        <button id="book" class="bookButton">Book Now</button>
+      </div>
+    </div>
+    <div class="cards-container">
+      <div id="result"></div>
+    </div>
+
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>
